@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>js</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      padding: 8px 15px;
+      cursor: pointer;
+    }
+    .hide {
+      display: none;
+    }
+  </style>
+
+  <body>
+    <div class="body">
+      <div style="text-align: center">
+        <h2>特等獎這裡</h2>
+        <button type="button" id="grand-prize-btn">抽獎</button>
+        <div class="hide" id="grand-result">
+          <h3>得獎者是：<span id="grand-prize-winner"></span></h3>
+        </div>
+      </div>
+      <div>
+        <h2>一等獎這裡</h2>
+        <button type="button" id="first-prize-btn">抽獎</button>
+        <div class="hide" id="first-prize-result">
+          <h3>得獎者是：<span id="first-prize-winners"></span></h3>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
